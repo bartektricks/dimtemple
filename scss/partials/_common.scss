@@ -1,10 +1,5 @@
-.js-page {overflow: hidden;}
-
-.js-page-content {
-  min-height: 100vh;
-  padding: 10px;
-  color: $white;
-  opacity: 0;
+.js-page {
+  overflow: hidden;
 }
 
 .js-reveal-site {
@@ -15,4 +10,145 @@
   height: 2px;
   background: $black;
   pointer-events: none;
+}
+
+/* Navigation Bar */
+.navigation-bar {
+  display: flex;
+  position: relative;
+  z-index: 1000;
+
+  @include breakpoint(small) {
+    align-items: center;
+  }
+
+  .logo {
+    flex: 1 1 auto;
+
+    .mobile-logo {
+      @include breakpoint(small) {
+        display: none;
+      }
+    }
+
+    .desktop-logo {
+      display: none;
+
+      @include breakpoint(small) {
+        display: block;
+      }
+
+      @include breakpoint(medium) {
+        width: 280px;
+        height: 120px;
+      }
+    }
+  }
+
+  .burger-menu {
+    margin-left: auto;
+    flex: 0 0 auto;
+  }
+}
+
+/* Burger Menu */
+.burger-menu {
+  width: remcalc(28);
+  height: remcalc(22);
+  position: relative;
+  cursor: pointer;
+  transition: all .6s $cubic;
+
+  & > span {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: $white;
+    transition: all .4s $cubic;
+
+    &:nth-child(2) {
+      top: 10px;
+    }
+
+    &:nth-child(3) {
+      top: 20px;
+
+      &:before, &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: $white;
+        opacity: 0;
+        transition: all .4s $cubic;
+      }
+
+      &:before {
+        transform-origin: 0 0;
+      }
+
+      &:after {
+        transform-origin: 100% 100%;
+      }
+    }
+  }
+
+  //&:hover {
+  //  & > span {
+  //    &:nth-child(1) {
+  //      opacity: 0;
+  //    }
+  //
+  //    &:nth-child(2) {
+  //      opacity: 0;
+  //    }
+  //
+  //    &:nth-child(3) {
+  //      &:before {
+  //        opacity: 1;
+  //        transform: rotate(-60deg);
+  //      }
+  //
+  //      &:after {
+  //        opacity: 1;
+  //        transform: rotate(60deg);
+  //      }
+  //    }
+  //  }
+  //}
+
+  &.is-active {
+    transform: rotate(360deg);
+
+    & > span {
+      &:nth-child(1) {
+        opacity: 1;
+        transform: translate(0, 10px) rotate(-45deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 1;
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(3) {
+        opacity: 0;
+
+        &:before, &:after {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+/* Sections */
+.section {
+  background: $white;
+  padding: 20px;
+  min-height: 70vh;
 }

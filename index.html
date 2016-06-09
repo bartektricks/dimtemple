@@ -17,18 +17,62 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="js-page">
+<!-- Loading Functions -->
 <div class="js-preloader">Loading...</div>
 <div class="js-reveal-site"></div>
+<!-- End of Loading Functions -->
 
-<div class="js-page-content">
-	PAGE CONTENT<br />
-	Some Content goes here<br />
-	Nice huh?<br />
-	Keep that good work up, bruh!
+<ul class="menu-reveal">
+	<li class="menu-item">
+		<a href="#" data-glitch="Homepage">Homepage</a>
+	</li>
+	<li class="menu-item">
+		<a href="#" data-glitch="About">About</a>
+	</li>
+	<li class="menu-item">
+		<a href="#" data-glitch="Team">Team</a>
+	</li>
+	<li class="menu-item social-icons">
+		<a class="fb" href="https://www.facebook.com/dimtemple/?fref=ts" target="_blank">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path d="M350.912 71.615c-10.38-2.22-20.215-4.034-29.507-5.44-9.292-1.404-19.4-2.13-30.323-2.175-31.82.136-54.8 7.48-68.94 22.028-14.142 14.55-21.077 35.49-20.805 62.822v39.705h-40.25v64.182h40.25V448h78.323V252.737h57.11l5.44-64.182h-62.55v-31.003c-.453-8.793.86-15.682 3.943-20.668 3.082-4.986 10.652-7.524 22.71-7.615 4.814.022 10.412.385 16.792 1.087 6.38.703 12.385 1.61 18.017 2.72z" fill="#fff"/></svg>
+		</a>
+		<a class="ig" href="https://www.instagram.com/dimtemple/" target="_blank">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path d="M108 64c-24 0-44 20-44 44v296c0 24 20 44 44 44h296c24 0 44-20 44-44V108c0-24-20-44-44-44H108zm236 44h44c9 0 16 8 16 16v44c0 8-8 12-16 12h-44c-8 0-16-8-16-16v-40c0-8 8-16 16-16zm-88 68a76 76 0 0 1 76 76 76 76 0 0 1-76 76 76 76 0 0 1-76-76 76 76 0 0 1 76-76zm-148 48h36.596A116 116 0 0 0 140 256a116 116 0 0 0 116 116 116 116 0 0 0 116-116 116 116 0 0 0-4.666-32H404v164c0 8-8 16-16 16H124c-8 0-16-8-16-16V224z" fill="#fff"/></svg>
+		</a>
+		<a class="yt" href="https://www.youtube.com/channel/UCr6VUtdGKsstQ3KblYwxKKQ" target="_blank">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path d="M216.356 206.19c-.006 35.966-.01 71.93-.017 107.895l103.757-54.135-103.74-53.76zm227.81 126.586c-2.807 21.003-12.623 43.977-34.556 50.793-24.07 6.417-49.474 4.494-74.155 6.208-73.65 1.887-147.51 2.205-221.004-3.39-22.36-1.79-40.362-20.116-44.122-41.873-7.737-37.623-6.28-76.377-6.163-114.613 2.19-29.07-.177-61.036 16.866-86.323 17.12-20.522 46.09-18.612 70.27-20.316 82.043-2.855 164.347-3.8 246.25 2.47 22.362 1.786 40.36 20.117 44.125 41.873 7.605 36.67 6.24 74.45 6.23 111.734-.414 17.857-1.705 35.693-3.74 53.436z" fill="#fff"/></svg>
+		</a>
+	</li>
+</ul>
+
+<div class="js-page-content" data-vide-bg="video/bg" data-vide-options="loop: true, muted: true, position: 50% 50%">
+	<div class="navigation-bar">
+		<div class="logo">
+			<a href="/">
+				<img class="mobile-logo" src="img/svg/logotype-mobile.svg" alt="Temple of Dimensions" width="220" height="21" />
+				<img class="desktop-logo" src="img/svg/logotype-overmobile.svg" alt="Temple of Dimensions" width="215" height="92" />
+			</a>
+		</div>
+		<div class="burger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="site-content">
+		<h1 class="site-header" data-glitch="What We Do?">What We Do?</h1>
+		<div class="site-subheader">
+			We are <span class="violet">hugely passionate</span> about extreme sports and cinematographic work. Though <span class="violet">tricking</span>, freestyle with weapons, acrobatics and choreographed fights.
+		</div>
+		<span class="find-out-more">
+			Scroll Down to find out more
+		</span>
+	</div>
 </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+<script src="js/vide.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

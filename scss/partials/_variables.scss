@@ -4,13 +4,18 @@ $base-size: 16 !default;
 $font-size: $base-size * 1px !default;
 
 /* Weight */
+$thin: 100 !default;
 $regular: 300 !default;
 $semibold: 500 !default;
+$bold: 700 !default;
 
 /* Colors */
 $violet: #a576fc !default;
-$white: #fff;
-$black: #000;
+$white: #fff !default;
+$black: #000 !default;
+$red: #f00 !default;
+$blue: #00f !default;
+$gray: #a2a6a9 !default;
 
 /* Motion */
 $cubic: cubic-bezier(.17, .67, .47, 1) !default;
