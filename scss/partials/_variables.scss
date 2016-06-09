@@ -1,0 +1,16 @@
+/* Fonts */
+$font-stack: 'Roboto Slab', serif !default;
+$base-size: 16 !default;
+$font-size: $base-size * 1px !default;
+
+/* Weight */
+$regular: 300 !default;
+$semibold: 500 !default;
+
+/* Colors */
+$violet: #a576fc !default;
+$white: #fff;
+$black: #000;
+
+/* Motion */
+$cubic: cubic-bezier(.17, .67, .47, 1) !default;
