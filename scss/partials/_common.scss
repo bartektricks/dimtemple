@@ -42,7 +42,7 @@
   }
 
   .burger-menu {
-    margin-left: auto;
+    margin:remcalc(25) remcalc(25) 0 auto;
     flex: 0 0 auto;
   }
 }
