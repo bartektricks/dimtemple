@@ -11,6 +11,8 @@
   background-attachment: fixed;
 
   @include breakpoint(small) {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     background-image: none; /* !todo: replace with poster */
     overflow: hidden;
@@ -41,12 +43,11 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    height: 85vh;
+    height: 100%;
     padding: 0;
   }
 
   @include breakpoint(medium) {
-    height: 80vh;
     padding: 0 remcalc(20);
   }
 }
