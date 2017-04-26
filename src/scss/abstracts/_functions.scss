@@ -1,0 +1,47 @@
+/* Breakpoints */
+@mixin breakpoint($point) {
+  @if $point == small {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  } @else if $point == large {
+    @media only screen and (min-width: 1280px) {
+      @content;
+    }
+  } @else if $point == extralarge {
+    @media only screen and (min-width: 1600px) {
+      @content;
+    }
+  }
+}
+
+/* React Viewports */
+.viewport {
+  display: none;
+  font-family: 'Mobile';
+
+  @include breakpoint(small) {
+    font-family: 'Small';
+  }
+
+  @include breakpoint(medium) {
+    font-family: 'Medium';
+  }
+
+  @include breakpoint(large) {
+    font-family: 'Large';
+  }
+
+  @include breakpoint(extralarge) {
+    font-family: 'ExtraLarge';
+  }
+}
+
+/* Rem Calculation */
+@function remcalc($size) {
+  @return (($size / $base-size) * 1rem);
+}

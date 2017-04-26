@@ -1,0 +1,16 @@
+/* *********************** */
+/* Fonts, Colors & Shadows */
+/* *********************** */
+
+/* Font Stack and Sizes */
+$primary-font-stack: Helvetica, Arial, sans-serif !default;
+$secondary-font-stack: Times New Roman, serif !default;
+$base-size: 16 !default;
+$font-size: ($base-size * 1px) !default;
+
+/* Primary Colors */
+$black: #000;
+$white: #fff;
+
+/* Default Transition */
+$cubic: cubic-bezier(.17, .67, .47, 1) !default;

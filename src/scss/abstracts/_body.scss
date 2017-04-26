@@ -1,0 +1,18 @@
+/**********************/
+/* HTML & BODY Tweaks */
+/**********************/
+html { text-size-adjust: 100%; }
+
+html,
+body {
+  font-family: $primary-font-stack;
+  color: $black;
+  max-width: 100vw;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.application { overflow: hidden; }
