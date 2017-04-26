@@ -18,6 +18,5 @@ yarn-error.log*
 .idea
 
 /yarn.lock
-/README.md
 
 /.gitignore
