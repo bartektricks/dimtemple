@@ -10,14 +10,12 @@ function Noop() {
 }
 
 ReactDOM.render((
-  <div className="main-application">
-    <HashRouter>
-      <TempleDocument>
-        <Route exact path="/" component={Homepage} />
-        <Route exact path="/team" component={Team} />
-        <Route path="*" component={Noop} />
-      </TempleDocument>
-    </HashRouter>
-  </div>
+  <HashRouter>
+    <TempleDocument>
+      <Route exact path="/" component={Homepage} />
+      <Route path="/team" component={Team} />
+      <Route path="*" component={Noop} />
+    </TempleDocument>
+  </HashRouter>
   ),document.getElementById('root')
 );

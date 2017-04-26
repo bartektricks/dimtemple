@@ -22,9 +22,8 @@ class TempleDocument extends Component {
   };
 
   render() {
-    console.log(this.state.currentMedia);
     return (
-      <div>
+      <div className="main-app">
         <nav className="navigation">
           <Link to="/">
             Homepage
